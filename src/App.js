@@ -11,7 +11,7 @@ import Makepayments from "./Components/Makepayments";
 import Footer from "./Components/Footer";
 import Notfound from "./Components/Notfound";
 import Cart from "./Components/Cart";
-import Addproducts from "./Components/Addproduct";
+// import Addproducts from "./Components/Addproduct";
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/about" element={<About />} /> 
         <Route path="/*" element={<Notfound/>} />
-        <Route path="/addproduct" element={<Addproducts/>} /> 
+        {/* <Route path="/addproduct" element={<Addproducts/>} />  */}
 
         {/* Protected Routes (must be logged in) */}
         <Route element={<ProtectedRoutes />}>
