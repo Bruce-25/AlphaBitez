@@ -1,0 +1,89 @@
+
+  .fashion-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .fashion-card {
+    background-color: #2b2b2b;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border: 1px solid #444;
+  }
+  
+  .fashion-title {
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffcc00;
+  }
+  
+  .fashion-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .fashion-input:focus {
+    outline: none;
+    border-color: #ffcc00;
+    box-shadow: 0 0 5px #ffcc00;
+  }
+  
+  .fashion-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffcc00;
+    color: #1c1c1c;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .fashion-button:hover {
+    background-color: #e6b800;
+  }
+  
+  .fashion-footer {
+    margin-top: 15px;
+  }
+  
+  .fashion-link {
+    color: #ffcc00;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .text-success {
+    color: #00ffcc;
+    font-size: 14px;
+  }
+  
+  .text-danger {
+    color: #ff4d4d;
+    font-size: 14px;
+  }
+  
+  .text-info {
+    color: #00bfff;
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,219 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  font-family: "Poppins", sans-serif;
+  background-color: #1a1a1a;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-left a, .nav-right a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-left a:hover, .nav-right a:hover {
+  color: #0ff;
+}
+
+.nav-left a::after, .nav-right a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background: linear-gradient(90deg, #0ff, #00f);
+}
+
+.cart-icon {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.cart-icon:hover {
+  transform: scale(1.1);
+  color: #0ff;
+}
+
+.btn {
+  padding: 6px 14px;
+  border: 2px solid #0ff;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #0ff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: beige;
+  color: #000;
+}
+
+.stars-btn {
+  background-color: #0ff;
+  color: #000;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.stars-btn:hover {
+  background-color: beige;
+}
+
+.stars-animation {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  z-index: -1;
+  overflow: hidden;
+  background: url('https://via.placeholder.com/1500x300.png?text=Galaxy+Background') center/cover no-repeat;
+  animation: moveStars 20s linear infinite;
+}
+
+.celestial-objects {
+  display: flex;
+  gap: 100px;
+  animation: moveStars 20s linear infinite;
+}
+
+.star, .moon, .planet {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.star {
+  background: radial-gradient(circle, #fff, #ffd700);
+  animation: twinkleStar 1.5s infinite ease-in-out;
+}
+
+.moon {
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  position: relative;
+  background: radial-gradient(circle, #f5f5f5 60%, #888888);
+}
+
+.moon::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #888;
+  border-radius: 50%;
+  top: 12px;
+  left: 12px;
+}
+
+.planet {
+  background-color: #ff6347;
+  animation: rotatePlanet 3s linear infinite;
+  background: radial-gradient(circle, #ff6347, #ff4500);
+}
+
+@keyframes moveStars {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes twinkleStar {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotatePlanet {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  padding: 1rem;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .nav-content {
+    display: none;
+    flex-direction: column;
+    background-color: #111;
+    padding: 1rem;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+
+  .nav-content.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-left,
+  .nav-right {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

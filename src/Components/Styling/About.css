@@ -1,0 +1,38 @@
+.about-container {
+    max-width: 600px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #333;
+  }
+  
+  .about-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #222;
+  }
+  
+  .about-container p {
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .about-container {
+      margin: 2rem 1rem;
+      padding: 1.5rem;
+    }
+  
+    .about-container h1 {
+      font-size: 1.6rem;
+    }
+  
+    .about-container p {
+      font-size: 0.95rem;
+    }
+  }

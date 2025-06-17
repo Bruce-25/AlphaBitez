@@ -1,0 +1,124 @@
+
+
+/* Center the content within the page */
+.notfound-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+/* The Not Found content card */
+.notfound-content {
+  text-align: center;
+  position: relative;
+  padding: 80px;
+  background: linear-gradient(145deg, #111111, #444444); /* Subtle gradient */
+  border-radius: 16px;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.7), 0px 10px 15px rgba(0, 0, 0, 0.4); /* Deep shadow */
+  transform: scale(1);
+  transition: all 0.4s ease;
+  max-width: 90%;
+  width: 500px;
+}
+
+.notfound-content:hover {
+  transform: scale(1.05); /* Slight zoom for high-end feel */
+}
+
+/* Glitch Effect on 404 */
+.glitch {
+  font-size: 220px;
+  font-weight: bold;
+  color: #D1D1D1;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  animation: glitch-anim 1.5s infinite linear;
+  z-index: 3;
+}
+
+/* Glitch Effect Animation */
+@keyframes glitch-anim {
+  0% {
+    transform: translate(2px, 2px);
+  }
+  10% {
+    transform: translate(-3px, -3px);
+  }
+  20% {
+    transform: translate(3px, 0);
+  }
+  30% {
+    transform: translate(-2px, 1px);
+  }
+  40% {
+    transform: translate(1px, -1px);
+  }
+  50% {
+    transform: translate(-3px, 3px);
+  }
+  60% {
+    transform: translate(2px, -2px);
+  }
+  70% {
+    transform: translate(-2px, -1px);
+  }
+  80% {
+    transform: translate(4px, 3px);
+  }
+  90% {
+    transform: translate(-1px, 2px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* Message and Link Styling */
+.message {
+  margin-top: 20px;
+  color: #E6E6E6;
+}
+
+.message-text {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  opacity: 0.7;
+}
+
+/* Go Home Link */
+.go-home-link {
+  color: #FFB600; /* Rich gold */
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.go-home-link:hover {
+  color: #D1A800; /* Darker gold for emphasis */
+  transform: scale(1.1); /* Slight zoom effect on hover */
+  text-decoration: underline;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .glitch {
+    font-size: 180px; /* Resize for smaller screens */
+  }
+
+  .message-text {
+    font-size: 18px;
+  }
+
+  .go-home-link {
+    font-size: 18px; /* Adjust link size for mobile */
+  }
+}

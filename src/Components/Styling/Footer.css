@@ -1,0 +1,97 @@
+.footer {
+    position: relative;
+    overflow: hidden;
+    background: #0c0f1a; /* deep cold navy */
+    color: #e0e0e0;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 4rem 0;
+    border-top: 1px solid #333;
+  }
+  
+  .footer h5 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #cccccc;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .footer a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .footer a:hover {
+    color: #66fcf1;
+  }
+
+  .footer img {
+    max-width: 100px; /* controls maximum width */
+    height: auto;     /* keeps aspect ratio */
+    object-fit: contain;
+    margin: 0.5rem 0;
+    transition: transform 0.3s ease;
+  }
+
+  .footer .social-icons {
+    display: flex;
+    gap: 1rem; /* Easiest and cleanest way */
+  }
+  
+  .footer img:hover {
+    transform: scale(1.05); /* subtle zoom on hover */
+  }
+  
+  .footer textarea,
+  .footer .form-control {
+    background-color: #1a1d2a;
+    color: #e0e0e0;
+    border: 1px solid #444;
+  }
+  
+  .footer .btn-outline-light {
+    border-color: #66fcf1;
+    color: #66fcf1;
+  }
+  .footer .btn-outline-light:hover {
+    background-color: #66fcf1;
+    color: #0c0f1a;
+  }
+  
+  /* Bubbles animation */
+  .bubbles {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  .bubble {
+    position: absolute;
+    bottom: -10%;
+    width: var(--size);
+    height: var(--size);
+    background: radial-gradient(circle, rgba(102, 252, 241, 0.3), transparent 70%);
+    border-radius: 50%;
+    animation: rise var(--time) ease-in infinite;
+    left: var(--position);
+    filter: blur(2px);
+    animation-delay: var(--delay);
+  }
+  
+  @keyframes rise {
+    to {
+      transform: translateY(calc(-1 * var(--distance)));
+      opacity: 0;
+    }
+  }
+  
+  /* Suggestion text area styling */
+  .footer textarea::placeholder {
+    color: #888;
+    font-style: italic;
+  }

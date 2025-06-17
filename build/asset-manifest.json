@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Alpha-Bitez/static/css/main.759cf6e8.css",
+    "main.js": "/Alpha-Bitez/static/js/main.6cd3eee0.js",
+    "static/js/453.dcfcf371.chunk.js": "/Alpha-Bitez/static/js/453.dcfcf371.chunk.js",
+    "index.html": "/Alpha-Bitez/index.html",
+    "main.759cf6e8.css.map": "/Alpha-Bitez/static/css/main.759cf6e8.css.map",
+    "main.6cd3eee0.js.map": "/Alpha-Bitez/static/js/main.6cd3eee0.js.map",
+    "453.dcfcf371.chunk.js.map": "/Alpha-Bitez/static/js/453.dcfcf371.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.759cf6e8.css",
+    "static/js/main.6cd3eee0.js"
+  ]
+}
